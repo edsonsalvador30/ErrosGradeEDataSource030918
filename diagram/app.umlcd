@@ -562,7 +562,8 @@
         "valor:java.lang.Double",
         "qtd:java.lang.Integer",
         "vencimento:java.util.Date",
-        "pedido:Pedido"
+        "pedido:Pedido",
+        "disponivel:java.lang.Boolean"
       ],
       "methods": [],
       "position": {
@@ -570,8 +571,8 @@
         "y": 275
       },
       "size": {
-        "width": 207.046875,
-        "height": 151.28226470947266
+        "width": 211.390625,
+        "height": 162.203125
       },
       "angle": 0,
       "multitenantContextJsonIgnore": "false",
@@ -707,15 +708,42 @@
           "name": "pedido",
           "type": "Pedido",
           "dbName": "fk_pedido",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
           "label": "",
           "mask": "",
           "isPrimaryKey": false,
           "isUniqueKey": false,
           "isNullable": true,
-          "multitenantContext": "",
           "pkType": "",
-          "isIgnore": false,
-          "isTransien": false,
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false
+        },
+        {
+          "name": "disponivel",
+          "type": "java.lang.Boolean",
+          "dbName": "disponivel",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Disponivel",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
           "isInsertable": true,
           "isUpdatable": true,
           "isEncryption": false,
@@ -735,12 +763,12 @@
           "transform": "translate(0,0)"
         },
         ".uml-class-attrs-rect": {
-          "height": 150,
+          "height": 170,
           "transform": "translate(0,50)"
         },
         ".uml-class-methods-rect": {
           "height": 30,
-          "transform": "translate(0,200)"
+          "transform": "translate(0,220)"
         },
         ".uml-class-name-text": {
           "fill": "#000",
@@ -750,12 +778,12 @@
         },
         ".uml-class-attrs-text": {
           "font-size": 11,
-          "text": "id\nnome_produto\nvalor\nqtd\nvencimento\npedido\n"
+          "text": "id\nnome_produto\nvalor\nqtd\nvencimento\npedido\ndisponivel\n"
         },
         ".uml-class-attrs-value": {
-          "ref-x": 106.53125,
+          "ref-x": 105.9375,
           "font-size": 11,
-          "text": "java.lang.String\njava.lang.String\njava.lang.Double\njava.lang.Integer\njava.util.Date\nPedido\n"
+          "text": "java.lang.String\njava.lang.String\njava.lang.Double\njava.lang.Integer\njava.util.Date\nPedido\njava.lang.Boolean\n"
         },
         ".uml-class-methods-text": {
           "fill": "#0066FF",

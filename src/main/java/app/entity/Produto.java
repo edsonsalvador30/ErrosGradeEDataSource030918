@@ -71,6 +71,13 @@ public class Produto implements Serializable {
   private Pedido pedido;
 
   /**
+  * @generated
+  */
+  @Column(name = "disponivel", nullable = true, unique = false, insertable=true, updatable=true)
+  
+  private java.lang.Boolean disponivel;
+
+  /**
    * Construtor
    * @generated
    */
@@ -195,6 +202,26 @@ public class Produto implements Serializable {
    */
   public Produto setPedido(Pedido pedido){
     this.pedido = pedido;
+    return this;
+  }
+
+  /**
+   * Obtém disponivel
+   * return disponivel
+   * @generated
+   */
+  
+  public java.lang.Boolean getDisponivel(){
+    return this.disponivel;
+  }
+
+  /**
+   * Define disponivel
+   * @param disponivel disponivel
+   * @generated
+   */
+  public Produto setDisponivel(java.lang.Boolean disponivel){
+    this.disponivel = disponivel;
     return this;
   }
 
